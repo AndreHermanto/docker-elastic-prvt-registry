@@ -2,9 +2,9 @@ version: '2'
 services:
   elastic-38:
     container_name: elasticsearch-grch-38
-    image: dice-registry.ad.garvan.unsw.edu.au:5000/docker-bouncy_elastic-38
+    image: dice-registry.ad.garvan.unsw.edu.au:5000/docker-elastic-38
   apache-38:
     container_name: apache-grch-38
-    image: dice-registry.ad.garvan.unsw.edu.au:5000/docker-bouncy_apache-38
+    image: dice-registry.ad.garvan.unsw.edu.au:5000/docker-apache-38
     ports:
       - "9500:443"
