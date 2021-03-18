@@ -1,9 +1,9 @@
 version: '2'
 services:
-  elastic:
+  elasticsearch:
     container_name: elasticsearch-ensembl-grch37
     image: dice-registry.ad.garvan.unsw.edu.au:5000/elasticsearch-ensembl-grch37
-  apache:
+  httpd:
     container_name: httpd-reverse-proxy-to-elasticsearch
     image: dice-registry.ad.garvan.unsw.edu.au:5000/httpd-reverse-proxy-to-elasticsearch
     ports:
